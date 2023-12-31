@@ -1,0 +1,13 @@
+@import "./constantes.scss";
+
+#Intro  { width: 80%; height: 800px; font-family: Inter; 
+          #IntroAnchor  { width: fit-content; height: 35px; border-radius: 1000px; border: 1px solid $Grey; @include centerRow; padding: 0 20px;
+                          svg { margin: 0 10px 0 0; width: 15px;}
+                          p   { color: aliceblue; font-size: 16px; font-family: InterLight; margin: 0;}
+                        }
+          p:nth-child(2) { font-family: InterBold; font-size: 50px; color: aliceblue; margin: 150px 0 30px;}
+          p:nth-child(3) { font-family: InterLight; font-size: 40px; color: $Grey;}
+          #ToAbout  { width: fit-content; height: 35px; border-radius: 1000px; border: 2px solid var(--custom-color); background: var(--custom-color); padding: 5px 30px; color: #1B1B19; margin: 150px auto 0 !important; @include centerRow;
+                      &:hover { background: none; color: var(--custom-color); cursor: pointer;}
+                    }
+        }

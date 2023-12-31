@@ -1,0 +1,59 @@
+@import "./constantes.scss";
+
+.visible    { opacity: 1; transform: translateY(-100px) !important;} 
+.invisible  { opacity: 0;}
+
+#Projets  { width: 80%; height: fit-content; margin-top: 60px; padding-bottom: 30px; font-family: Inter; transition: 1.5s !important; transform: translateY(100px);
+            #ProjetsAnchor  { width: fit-content; height: 35px; border-radius: 1000px; border: 1px solid $Grey; @include centerRow; padding: 0 20px; margin-bottom: 35px;
+                              svg { margin: 0 10px 0 0; width: 15px;}
+                              p   { color: aliceblue; font-size: 16px; font-family: InterLight; margin: 0;}
+                            }
+            .ProjetsTitle { width: 100%; height: 70px; margin-bottom: 25px; @include centerRow; justify-content: flex-start;
+                            p { font-family: InterLight; font-size: 40px; color: aliceblue; margin-right: 20px;
+                                span  { color: var(--custom-color);}
+                              }
+                          }
+            #ListContain    { width: 100%; height: fit-content; display: flex; flex-wrap: wrap; justify-content: space-between;
+                              a   { height: 400px; margin: 50px 0; @include centerCol; justify-content: space-between; align-items: flex-start;
+                                    .container  { width: 100%; height: 90%; border-radius: 30px; @include centerRow; position: relative; overflow: hidden;
+                                                  img { width: 110%; height: auto; position: absolute; z-index: 0;}
+                                                  .tan  { width: 100%; height: 100%; position: absolute; z-index: 50; background: rgba(27, 27, 25, 0.40);}
+                                                  .tags { width: 90%; height: fit-content; position: absolute; bottom: 20px; z-index: 150; display: flex; align-items: flex-end; flex-wrap: wrap;
+                                                          p { width: fit-content; height: fit-content; padding: 10px 20px; margin: 5px 5px; background: aliceblue; border-radius: 1000px; color: #1B1B19;}
+                                                        }
+                                                }
+                                    .legend { font-family: InterLight; font-size: 24px; color: aliceblue; }
+                                    &:hover {
+                                              .container  { filter: drop-shadow( 0 0 6px var(--custom-color));
+                                                .tags {
+                                                        p { color: aliceblue; background: #1B1B19;}
+                                                      }
+                                              }
+                                              .legend { color: var(--custom-color);}
+                                            }
+                                  }
+                              .half { width: 48%;
+                                      .container  {
+                                                    img {width: 215% !important;}
+                                                  }
+                                    }
+                              .full { width: 100%;}
+                            }
+          }
+
+@media screen and (max-width: 800px) {
+  #Projets  { 
+              #ListContain    { 
+                                .half { width: 100%;
+                                        .container  {
+                                                      img {width: 215% !important;}
+                                                    }
+                                      }
+                                .full { width: 100%;
+                                        .container  {
+                                                      img {width: 215% !important;}
+                                                    }
+                                }
+                              }
+  }
+}

@@ -1,0 +1,55 @@
+@import "./constantes.scss";
+
+.visible    { opacity: 1; transform: translateY(-100px) !important;} 
+.invisible  { opacity: 0;}
+
+#Skills  { width: 80%; height: fit-content; margin-top: 60px; padding-bottom: 100px; font-family: Inter; transition: 1.5s !important; transform: translateY(100px);
+  #SkillsAnchor  { width: fit-content; height: 35px; border-radius: 1000px; border: 1px solid $Grey; @include centerRow; padding: 0 20px; margin-bottom: 35px;
+                  svg { margin: 0 10px 0 0; width: 15px;}
+                  p   { color: aliceblue; font-size: 16px; font-family: InterLight; margin: 0;}
+                }
+  .SkillsTitle  { width: 100%; height: 70px; margin-bottom: 25px; @include centerRow; justify-content: flex-start;
+                  p { font-family: InterLight; font-size: 40px; color: aliceblue; margin-right: 20px;
+                      span  { color: var(--custom-color);}
+                    }
+                }
+  ul  { width: 100%; height: fit-content; display: flex; flex-wrap: wrap; margin-bottom: 50px;
+        li  { width: 20%; height: 180px; border-radius: 1000px; border: 2px solid $Grey; margin: 0 10px 30px 10px; @include centerCol; 
+              svg { width: auto; max-width: 70%; height: 70px; margin-bottom: 25px;}
+              p   { font-family: Inter; color: aliceblue; display: flex; text-align: center;}
+              &:hover { border: 2px solid var(--custom-color);
+                        svg {
+                              .skillHtml  { fill: #E54C21;}
+                              .skillCss   { fill: #214CE5;}
+                              .skillJs    { fill: #F0DC4E;}
+                              .skillSass  { fill: #CE679A;}
+                              .skillReact { fill: #61DBFB;}
+                              .skillNode  { fill: #529F41;}
+                              .skillC     { fill: #00589D;}
+                              .skillPhp   { fill: #8A93BE;}
+
+                              .skillClion       { fill: #1CD990;}
+                              .skillPhpstorm    { fill: #B443F1;}
+                              .skillVsc         { fill: #3CA8F3;}
+                              .skillPhotoshop   { fill: #00AAFF;}
+                              .skillIllustrator { fill: #FF9A00;}
+                              .skillArduino     { fill: #12989E;}
+
+                              .skillFigma1     { fill: #0ACF83;}
+                              .skillFigma2     { fill: #A259FF;}
+                              .skillFigma3     { fill: #F24E1E;}
+                              .skillFigma4     { fill: #FF7262;}
+                              .skillFigma5     { fill: #1ABCFE;}
+                            }
+                      }
+            }
+      }
+}
+
+@media screen and (max-width: 1200px) {
+  #Skills  { 
+              ul  { 
+                    li  { width: 130px;}
+                  }
+  }
+}

@@ -1,0 +1,11 @@
+@import "./constantes.scss";
+
+#Middle { width: 60%; height: fit-content; position: absolute; left: 450px; display: flex; flex-direction: column; align-items: center; padding: 100px 0;
+
+        }
+
+@media screen and (max-width: 1200px) { 
+  #Middle { width: 100%; left: 0; @include centerCol;
+
+          }
+}
