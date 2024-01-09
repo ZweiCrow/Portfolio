@@ -2,22 +2,34 @@ import React, { useEffect, useRef, useState } from "react";
 import "../Utils/Sass/about.scss";
 
 const About = (props) => {
-  const [visibility,setVisibility] = useState(false)
-  const section = useRef()
+  const section = useRef();
+  const [visibility, setVisibility] = useState(false);
+  const [year, setYear] = useState(2001);
+  const d = new Date()
 
-  useEffect(()=>{
-    const observer = new IntersectionObserver((entries)=>{
-      const entry = entries[0]
-        props.nav(entry.isIntersecting)
-        if(entry.isIntersecting === true){
-          setVisibility(entry.isIntersecting)
-        }
-    })
-    observer.observe(section.current)
-  },[])
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      props.nav(entry.isIntersecting);
+      if (entry.isIntersecting === true) {
+        setVisibility(entry.isIntersecting);
+      }
+    });
+    observer.observe(section.current);
+    if (d.getMonth() <= 5) {
+      setYear(2002)
+    } else if (d.getMonth() > 5) {
+      setYear(2001)
+    }
+  }, []);
 
   return (
-    <div id="About" ref={section} className={(visibility)? "visible" : "invisible"}>
+    <div
+      id="About"
+      ref={section}
+      className={visibility ? "visible" : "invisible"}
+    >
       <div id="AboutAnchor">
         <svg
           width="100"
@@ -34,14 +46,13 @@ const About = (props) => {
         <p>A PROPOS DE MOI</p>
       </div>
       <p id="AboutText">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, et quae!
-        Repellendus sint aliquam recusandae debitis sequi maiores! Quae facere
-        animi voluptas explicabo amet maiores id numquam. Saepe, nam sit.
+        Je suis âgé de {d.getFullYear()-year} ans et j'ai pour but de travailler au sein d’une
+        équipe de création numérique. Je suis actuellement à la recherche d'un
+        poste de développeur web.
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, et quae!
-        Repellendus sint aliquam recusandae debitis sequi maiores! Quae facere
-        animi voluptas explicabo amet maiores id numquam. Saepe, nam sit.
+        Je me passionne pour les domaines de la programmation, de l'informatique et du design.
+
       </p>
     </div>
   );
