@@ -37,7 +37,7 @@ const Projets = (props) => {
       </div>
 
       <div className="ProjetsTitle">
-        <p>Les <span>projets</span> sur lequels j'ai travaillé</p>
+        <p>Les <span>projets</span> sur lesquels j'ai travaillé</p>
       </div>
 
       <ul id="ListContain">

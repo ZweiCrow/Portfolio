@@ -47,15 +47,15 @@ const Home = () => {
       <Card contact={scrollToContact} />
       <div id="Middle">
         <Intro about={scrollToAbout} nav={(x)=>{setAnchorIntro(x)}}/>
-        <div ref={about}></div>
+        <div ref={about} style={{height: "200px"}}></div>
         <About nav={(x)=>{setAnchorAbout(x)}}/>
-        <div ref={resume}></div>
+        <div ref={resume} style={{height: "200px"}}></div>
         <Resume nav={(x)=>{setAnchorResume(x)}} />
-        <div ref={skills}></div>
+        <div ref={skills} style={{height: "200px"}}></div>
         <Skills nav={(x)=>{setAnchorSkills(x)}} />
-        <div ref={projects}></div>
+        <div ref={projects} style={{height: "200px"}}></div>
         <Projets nav={(x)=>{setAnchorProjets(x)}} />
-        <div ref={contact}></div>
+        <div ref={contact} style={{height: "200px"}}></div>
         <Contact nav={(x)=>{setAnchorContact(x)}} />
       </div>
       <NavBar
