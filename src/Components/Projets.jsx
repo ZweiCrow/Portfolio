@@ -67,6 +67,20 @@ const Projets = (props) => {
           <p className="legend">Cozy Cooks</p>
         </Link>
 
+        <Link className="half" to={"https://jukebox-76pp.onrender.com"} target="_blank">
+          <div className="container">
+            <img src="/Photos/Jukebox.png" alt="" />
+            <div className="tan"></div>
+            <div className="tags">
+              <p>Figma</p>
+              <p>React JS</p>
+              <p>Node JS</p>
+              <p>NoSql</p>
+            </div>
+          </div>
+          <p className="legend">Jukebox</p>
+        </Link>
+
       </ul>
     </div>
   );
