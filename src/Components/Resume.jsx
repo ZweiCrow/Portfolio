@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Utils/Sass/resume.scss";
 import { Link } from "react-router-dom";
-import CVPDF from "../Utils/EMIDOF Christopher - CV sombre.pdf";
+import CVPDF from "../Utils/EMIDOF Christopher - CV.pdf";
 
 const Resume = (props) => {
   const [visibility,setVisibility] = useState(false)
