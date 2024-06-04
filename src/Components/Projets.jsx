@@ -43,7 +43,7 @@ const Projets = (props) => {
       <ul id="ListContain">
         <Link className="full" to={"/"}>
           <div className="container">
-            <img src="/Photos/Portfolio.png" alt="" />
+            <img src="/Photos/Portfolio.png" alt="Portfolio" />
             <div className="tan"></div>
             <div className="tags">
               <p>From Scratch</p>
@@ -55,7 +55,7 @@ const Projets = (props) => {
 
         <Link className="half" to={"https://loving-greider.37-187-71-70.plesk.page"} target="_blank">
           <div className="container">
-            <img src="/Photos/CozyCook.png" alt="" />
+            <img src="/Photos/CozyCook.png" alt="CozyCook" />
             <div className="tan"></div>
             <div className="tags">
               <p>Figma</p>
@@ -69,7 +69,7 @@ const Projets = (props) => {
 
         <Link className="half" to={"https://jukebox-76pp.onrender.com"} target="_blank">
           <div className="container">
-            <img src="/Photos/Jukebox.png" alt="" />
+            <img src="/Photos/Jukebox.png" alt="Jukebox" />
             <div className="tan"></div>
             <div className="tags">
               <p>Figma</p>
@@ -79,6 +79,19 @@ const Projets = (props) => {
             </div>
           </div>
           <p className="legend">Jukebox</p>
+        </Link>
+
+        <Link className="full" to={"https://portesdelabrie.org"} target="_blank">
+          <div className="container">
+            <img src="/Photos/MLPDLB.png" alt="MLPDLB" />
+            <div className="tan"></div>
+            <div className="tags">
+              <p>Wordpress</p>
+              <p>HTML</p>
+              <p>CSS</p>
+            </div>
+          </div>
+          <p className="legend">Mission Locale des Portes de la Brie</p>
         </Link>
 
       </ul>

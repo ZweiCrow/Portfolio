@@ -27,7 +27,7 @@ body  {overflow-x: hidden;}
                                       }
                                 }
                       }
-          #Navigation { width: 65px; height: 50%; background: #1B1B19; border-radius: 1000px; border: 1px solid $Grey; @include centerCol;
+          #Navigation { width: 65px; min-height: 50%; height: fit-content; background: #1B1B19; border-radius: 1000px; border: 1px solid $Grey; @include centerCol;
                         li  { width: 30px; height: 30px; margin: 20px 0; @include centerRow;
                               span  { position: absolute; font-size: 12px; background: #404042; right: 65%; color: aliceblue; display: block; padding: 3px 8px; border-radius: 5px; visibility: hidden; opacity: 0; }
                               div { width: 80%; height: 80%; display: flex; @include centerRow;

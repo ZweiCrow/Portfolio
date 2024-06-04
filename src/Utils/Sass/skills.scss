@@ -15,8 +15,8 @@
                 }
   ul  { width: 100%; height: fit-content; display: flex; flex-wrap: wrap; margin-bottom: 50px;
         li  { width: 20%; height: 180px; border-radius: 1000px; border: 2px solid $Grey; margin: 0 10px 30px 10px; @include centerCol; 
-              svg { width: auto; max-width: 70%; height: 70px; margin-bottom: 25px;}
-              p   { font-family: Inter; color: aliceblue; display: flex; text-align: center;}
+              svg { width: auto; max-width: 70%; height: 30%; margin-bottom: 25px;}
+              p   { font-family: Inter; font-size: 1.2vw; color: aliceblue; display: flex; text-align: center;}
               &:hover { border: 2px solid var(--custom-color);
                         svg {
                               .skillHtml  { fill: #E54C21;}
@@ -49,7 +49,7 @@
 @media screen and (max-width: 1200px) {
   #Skills  { 
               ul  { 
-                    li  { width: 130px;}
+                    li  { width: 15%; height: 100px;}
                   }
   }
 }
