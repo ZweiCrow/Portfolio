@@ -17,12 +17,13 @@ const About = (props) => {
       }
     });
     observer.observe(section.current);
-    if (d.getMonth() <= 5) {
+    if (d.getMonth()+1 <= 5 ) {
       setYear(2002)
-    } else if (d.getMonth() > 5) {
+    } else if (d.getMonth()+1 >= 5) {
       setYear(2001)
     }
   }, []);
+
 
   return (
     <div
