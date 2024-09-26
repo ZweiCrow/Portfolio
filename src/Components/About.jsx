@@ -52,7 +52,10 @@ const About = (props) => {
         poste de développeur web.
         <br />
         <br />
-        Je me passionne pour les domaines de la programmation, de l'informatique et du design.
+        Je baigne dans le graphisme et dans les technologies depuis mon enfance, ce sont des domaines qui ont forgé ma personnalité et qui encore aujourd’hui me passionnent.
+        <br />
+        <br />
+        Le développement web rassemble deux de mes passions qui sont le graphisme et la programmation, c’est ce qui m’a poussé à me lancer sur cette voie et plus particulièrement le côté front qui approfondit l’aspect graphique à l'instar du développement UI/UX.
 
       </p>
     </div>
