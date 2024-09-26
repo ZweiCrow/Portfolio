@@ -13,7 +13,7 @@ const Card = (props) => {
           </p>
         </div>
         <div id="cardPicture">
-          <img src="/Photos/PFP.jpg" alt="" />
+          <img src="/Photos/Profile.jpg" alt="" />
         </div>
         <div id="cardEmail">
           <p>christopher.emidof@gmail.com</p>

@@ -33,7 +33,7 @@ const Resume = (props) => {
             fill="#F0F8FF"
           />
         </svg>
-        <p>MON PARCOUR</p>
+        <p>MON PARCOURS</p>
       </div>
       <div id="ResumeTitle">
         <p>
@@ -57,7 +57,19 @@ const Resume = (props) => {
       </div>
       <div className="Timestamp">
         <div className="TimestampDate">
-          <p></p>31/05/2023 - 26/07/2023
+          <p>13/05/2024 - 09/06/2024</p>
+        </div>
+        <div className="TimestampTitle">
+          <p className="exp">Développeur Front-end</p>
+        </div>
+        <div className="TimestampCorp">
+          <p>Mission Local des portes de la Brie</p>
+        </div>
+      </div>
+
+      <div className="Timestamp">
+        <div className="TimestampDate">
+          <p>31/05/2023 - 26/07/2023</p>
         </div>
         <div className="TimestampTitle">
           <p className="exp">Développeur lead Front-end</p>
@@ -69,7 +81,7 @@ const Resume = (props) => {
       
       <div className="Timestamp">
         <div className="TimestampDate">
-          <p></p>09/12/2022 - 26/06/2023
+          <p>09/12/2022 - 26/06/2023</p>
         </div>
         <div className="TimestampTitle">
           <p>
@@ -83,11 +95,11 @@ const Resume = (props) => {
 
       <div className="Timestamp">
         <div className="TimestampDate">
-          <p></p>Sept-Oct 2021
+          <p>Sept-Oct 2021</p>
         </div>
         <div className="TimestampTitle">
           <p>
-            Ingénierie Web/Média, Alternance <span>(RNCP niv.7)</span>
+            Ingénierie Web/Média, Formation <span>(RNCP niv.7)</span>
           </p>
         </div>
         <div className="TimestampCorp">
@@ -97,7 +109,7 @@ const Resume = (props) => {
 
       <div className="Timestamp">
         <div className="TimestampDate">
-          <p></p>23/11/2020 - 18/12/2020
+          <p>23/11/2020 - 18/12/2020</p>
         </div>
         <div className="TimestampTitle">
           <p className="exp">Technicien informatique</p>
@@ -109,7 +121,7 @@ const Resume = (props) => {
 
       <div className="Timestamp">
         <div className="TimestampDate">
-          <p></p>2019 - 2021
+          <p>2019 - 2021</p>
         </div>
         <div className="TimestampTitle">
           <p>
@@ -124,7 +136,7 @@ const Resume = (props) => {
 
       <div className="Timestamp">
         <div className="TimestampDate">
-          <p></p>2017 - 2019
+          <p>2017 - 2019</p>
         </div>
         <div className="TimestampTitle">
           <p>

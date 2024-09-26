@@ -41,6 +41,7 @@ const Projets = (props) => {
       </div>
 
       <ul id="ListContain">
+
         <Link className="full" to={"/"}>
           <div className="container">
             <img src="/Photos/Portfolio.png" alt="Portfolio" />
@@ -50,10 +51,11 @@ const Projets = (props) => {
               <p>React JS</p>
             </div>
           </div>
-          <p className="legend">Mon Porfolio (Vous y êtes déjà 😉)</p>
+          <p className="legend">Mon Porfolio</p>
+          <p className="desc">Mon CV en ligne qui liste mes formations, mes experiences et mes compétences.</p>
         </Link>
 
-        <Link className="half" to={"https://loving-greider.37-187-71-70.plesk.page"} target="_blank">
+        <Link className="half" to={"https://cozycooks.onrender.com"} target="_blank">
           <div className="container">
             <img src="/Photos/CozyCook.png" alt="CozyCook" />
             <div className="tan"></div>
@@ -65,6 +67,7 @@ const Projets = (props) => {
             </div>
           </div>
           <p className="legend">Cozy Cooks</p>
+          <p className="desc">Un site pour contenir et trier des recettes de cuisine à la manière d’un recueil.<br/> Avec une fonctionnalité de "Carnet" qui permet de créer ses propres fiches et de les consulter.</p>
         </Link>
 
         <Link className="half" to={"https://jukebox-76pp.onrender.com"} target="_blank">
@@ -79,6 +82,7 @@ const Projets = (props) => {
             </div>
           </div>
           <p className="legend">Jukebox</p>
+          <p className="desc">Un lecteur de musique, qui répertorie des artistes et leurs discographie, des albums.</p>
         </Link>
 
         <Link className="full" to={"https://portesdelabrie.org"} target="_blank">
@@ -92,6 +96,7 @@ const Projets = (props) => {
             </div>
           </div>
           <p className="legend">Mission Locale des Portes de la Brie</p>
+          <p className="desc">Site informatif de la Mission Locale des Portes de la Brie qui répertorie des informations, des aides et propose des accompagnements aux jeunes ainsi qu'aux employeurs.</p>
         </Link>
 
       </ul>

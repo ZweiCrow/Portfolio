@@ -48,7 +48,8 @@ table {
 }
 
 body{
-	background: #1B1B19; 
+	// background: #1B1B19; 
+	background: #262527; 
 }
 html{
 	scroll-behavior: smooth;
@@ -58,4 +59,8 @@ html{
 }
 :root {
   --custom-color: #28E98C;
+  --back: #262527;
+  --text1: #f0f8ff;
+  --text2: #a1a1a1;
+  --active: #e9bc28;
 }

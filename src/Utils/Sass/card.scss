@@ -2,40 +2,40 @@
 
 
 #cardspace  { width: 450px; height: 100vh; @include centerRow; font-family: Inter; position: fixed; left: 0; z-index: 1000;
-              #card { width: 90%; height: 80%; border-radius: 30px; border: 1px solid $Grey; @include centerCol; justify-content: space-around;
+              #card { width: 90%; height: 80%; border-radius: 30px; border: 1px solid var(--text2); @include centerCol; justify-content: space-around;
                       #cardTitle  { width: 75%; height: 10%; display: flex; justify-content: space-between; align-items: center;
-                                    p { font-size: 14px; color: aliceblue;}
+                                    p { font-size: 14px; color: var(--text1);}
                                     p:first-child { font-size: 26px; font-family: InterBold;}
                                     p:nth-child(2) { text-align: end; line-height: 1.5;}
                                   }
-                      #cardPicture  { width: 300px; height: 30%; border-radius: 30px; overflow: hidden;
-                                      img { width: 100%; transform: translateY(-25%);}
+                      #cardPicture  { width: 300px; height: 40%; border-radius: 30px; overflow: hidden;
+                                      img { width: 100%; transform: translateY(-15%);}
                                     }
                       #cardEmail    { width: 75%; height: 1%; @include centerRow;
-                                      p { width: fit-content; font-family: InterLight; color: aliceblue;}
+                                      p { width: fit-content; font-family: InterLight; color: var(--text1);}
                                     }
                       #cardAdress   { width: 75%; height: 1%; @include centerRow;
-                                      p { width: fit-content; font-family: InterLight; color: aliceblue;}
+                                      p { width: fit-content; font-family: InterLight; color: var(--text1);}
                                     }
                       #cardMedias   { width: 75%; height: 8%; @include centerRow;
-                                      li  { width: 50px; height: 50px; @include centerRow; border-radius: 1000px; border: 2px solid $Grey; margin: 0 10px;
+                                      li  { width: 50px; height: 50px; @include centerRow; border-radius: 1000px; border: 2px solid var(--text2); margin: 0 10px;
                                             a { width: 50%; height: 50%; border-radius: 1000px; @include centerRow;
                                                 svg { height: 90%; width: 90%;}
                                               }
-                                            &:hover { border: 2px solid var(--custom-color); cursor: pointer;
+                                            &:hover { border: 2px solid var(--active); cursor: pointer;
                                                       a {
                                                           svg { 
-                                                            path  { fill: var(--custom-color);}
+                                                            path  { fill: var(--active);}
                                                           }
                                                         }
                                                     }
                                           }
                                     }
-                      #cardContact  { width: 75%; height: 8%; background: var(--custom-color); @include centerRow; font-family: InterBold; font-size: 20px; color: #1B1B19; border-radius: 1000px; border: 2px solid var(--custom-color);
+                      #cardContact  { width: 75%; height: 8%; background: var(--active); @include centerRow; font-family: InterBold; font-size: 20px; color: var(--back); border-radius: 1000px; border: 2px solid var(--active);
                                       svg { height: 30%; width: 45px;}
-                                      &:hover  { background: transparent; color: var(--custom-color); cursor: pointer;
+                                      &:hover  { background: transparent; color: var(--active); cursor: pointer;
                                                   svg { 
-                                                        path  { fill: var(--custom-color);}
+                                                        path  { fill: var(--active);}
                                                       }
                                                 }
                                     }

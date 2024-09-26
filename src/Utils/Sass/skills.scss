@@ -4,20 +4,21 @@
 .invisible  { opacity: 0;}
 
 #Skills  { width: 80%; height: fit-content; margin-top: 60px; padding-bottom: 100px; font-family: Inter; transition: 1.5s !important; transform: translateY(100px);
-  #SkillsAnchor  { width: fit-content; height: 35px; border-radius: 1000px; border: 1px solid $Grey; @include centerRow; padding: 0 20px; margin-bottom: 35px;
+  #SkillsAnchor  { width: fit-content; height: 35px; border-radius: 1000px; border: 1px solid var(--text2); @include centerRow; padding: 0 20px; margin-bottom: 35px;
                   svg { margin: 0 10px 0 0; width: 15px;}
-                  p   { color: aliceblue; font-size: 16px; font-family: InterLight; margin: 0;}
+                  p   { color: var(--text1); font-size: 16px; font-family: InterLight; margin: 0;}
                 }
   .SkillsTitle  { width: 100%; height: 70px; margin-bottom: 25px; @include centerRow; justify-content: flex-start;
-                  p { font-family: InterLight; font-size: 40px; color: aliceblue; margin-right: 20px;
-                      span  { color: var(--custom-color);}
+                  p { font-family: InterLight; font-size: 40px; color: var(--text1); margin-right: 20px;
+                      span  { color: var(--active);}
                     }
                 }
   ul  { width: 100%; height: fit-content; display: flex; flex-wrap: wrap; margin-bottom: 50px;
-        li  { width: 20%; height: 180px; border-radius: 1000px; border: 2px solid $Grey; margin: 0 10px 30px 10px; @include centerCol; 
-              svg { width: auto; max-width: 70%; height: 30%; margin-bottom: 25px;}
-              p   { font-family: Inter; font-size: 1.2vw; color: aliceblue; display: flex; text-align: center;}
-              &:hover { border: 2px solid var(--custom-color);
+        li  { width: 15%; height: 130px; border-radius: 1000px; border: 2px solid var(--text2); margin: 0 10px 30px 10px; @include centerCol; 
+              svg { width: auto; max-width: 70%; height: 25%; margin-bottom: 25px;}
+              p   { font-family: Inter; font-size: 1vw; color: var(--text2); display: flex; text-align: center;}
+              &:hover { border: 2px solid var(--active);
+                        p   { color: var(--text1);}
                         svg {
                               .skillHtml  { fill: #E54C21;}
                               .skillCss   { fill: #214CE5;}

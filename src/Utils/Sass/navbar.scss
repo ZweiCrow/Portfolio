@@ -7,7 +7,7 @@
 
 .activeNav  { color: aliceblue;
               svg {
-                path  { fill: var(--custom-color);}
+                path  { fill: var(--active);}
               }
             }
 
@@ -19,22 +19,22 @@
 body  {overflow-x: hidden;}
 
 #NavBar { width: 150px; height: 100vh; position: fixed; right: 0; top: 0; z-index: 1000; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: Inter;
-          #BoutonMenu { width: 65px; height: 65px; background: #1B1B19; border-radius: 1000px; border: 1px solid $Grey; @include centerRow; position: absolute; top: 25px;
+          #BoutonMenu { width: 65px; height: 65px; background: var(--back); border-radius: 1000px; border: 1px solid var(--text2); @include centerRow; position: absolute; top: 25px;
                         svg { width: 40%; height: 40%;}
-                        &:hover { cursor: pointer; border: 2px solid var(--custom-color);
+                        &:hover { cursor: pointer; border: 2px solid var(--active);
                                   svg {
-                                        path  {stroke: var(--custom-color);}
+                                        path  {stroke: var(--active);}
                                       }
                                 }
                       }
-          #Navigation { width: 65px; min-height: 50%; height: fit-content; background: #1B1B19; border-radius: 1000px; border: 1px solid $Grey; @include centerCol;
+          #Navigation { width: 65px; min-height: 50%; height: fit-content; background: var(--back); border-radius: 1000px; border: 1px solid var(--text2); @include centerCol;
                         li  { width: 30px; height: 30px; margin: 20px 0; @include centerRow;
-                              span  { position: absolute; font-size: 12px; background: #404042; right: 65%; color: aliceblue; display: block; padding: 3px 8px; border-radius: 5px; visibility: hidden; opacity: 0; }
+                              span  { position: absolute; font-size: 12px; background: var(--text2); right: 65%; color: var(--text1); display: block; padding: 3px 8px; border-radius: 5px; visibility: hidden; opacity: 0; }
                               div { width: 80%; height: 80%; display: flex; @include centerRow;
                                     svg { width: 100%; height: 100%; }
                                     &:hover { cursor: pointer;
                                               svg {
-                                                    path  { fill: var(--custom-color);}
+                                                    path  { fill: var(--active);}
                                                   }
                                             }
                                   }
@@ -44,15 +44,15 @@ body  {overflow-x: hidden;}
                             }
                       }
                     }
-#Menu { width: 100%; height: 100vh; background: $GreyT; position: fixed; top: 0; left: 0; z-index: 1500; font-family: Inter; color: $Grey; opacity: 0; display: none;
-        #Panel  { width: 350px; height: 100%; background: #1B1B19; position: absolute; right: 0px; @include centerRow; align-items: flex-start; animation-duration: 0.5s; animation-name: example;
+#Menu { width: 100%; height: 100vh; background: $GreyT; position: fixed; top: 0; left: 0; z-index: 1500; font-family: Inter; color: var(--text2); opacity: 0; display: none;
+        #Panel  { width: 350px; height: 100%; background: var(--back); position: absolute; right: 0px; @include centerRow; align-items: flex-start; animation-duration: 0.5s; animation-name: example;
                   ul  { width: 60%; height: 60%; margin-top: 100px;
-                        li:nth-child(1){ margin: 0 0 50px; font-size: 22px; color: $Grey !important;}
+                        li:nth-child(1){ margin: 0 0 50px; font-size: 22px; color: var(--text2) !important;}
                         li  { width: fit-content; height: 50px; margin: 10px 0; @include centerRow; justify-content: flex-start; font-size: 14px;
                               svg { height: 50%; width: 20px; margin-right: 15px;}
-                              &:hover { cursor: pointer; color: aliceblue;
+                              &:hover { cursor: pointer; color: var(--text1);
                                         svg {
-                                              path  { fill: var(--custom-color);}
+                                              path  { fill: var(--active);}
                                             }
                                       }
                             }

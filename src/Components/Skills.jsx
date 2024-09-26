@@ -136,7 +136,7 @@ const Skills = (props) => {
           </svg>
           <p>Node</p>
         </li>
-        <li>
+        {/* <li>
           <svg
             width="100"
             height="113"
@@ -151,8 +151,8 @@ const Skills = (props) => {
             />
           </svg>
           <p>C++</p>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <svg
             width="16"
             height="14"
@@ -168,7 +168,7 @@ const Skills = (props) => {
           </svg>
 
           <p>Php</p>
-        </li>
+        </li> */}
       </ul>
 
       <div className="SkillsTitle">

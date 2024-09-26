@@ -4,13 +4,13 @@
 .invisible  { opacity: 0;}
 
 #Projets  { width: 80%; height: fit-content; margin-top: 60px; padding-bottom: 30px; font-family: Inter; transition: 1.5s !important; transform: translateY(100px);
-            #ProjetsAnchor  { width: fit-content; height: 35px; border-radius: 1000px; border: 1px solid $Grey; @include centerRow; padding: 0 20px; margin-bottom: 35px;
+            #ProjetsAnchor  { width: fit-content; height: 35px; border-radius: 1000px; border: 1px solid var(--text2); @include centerRow; padding: 0 20px; margin-bottom: 35px;
                               svg { margin: 0 10px 0 0; width: 15px;}
-                              p   { color: aliceblue; font-size: 16px; font-family: InterLight; margin: 0;}
+                              p   { color: var(--text1); font-size: 16px; font-family: InterLight; margin: 0;}
                             }
             .ProjetsTitle { width: 100%; height: 70px; margin-bottom: 25px; @include centerRow; justify-content: flex-start;
-                            p { font-family: InterLight; font-size: 40px; color: aliceblue; margin-right: 20px;
-                                span  { color: var(--custom-color);}
+                            p { font-family: InterLight; font-size: 40px; color: var(--text1); margin-right: 20px;
+                                span  { color: var(--active);}
                               }
                           }
             #ListContain    { width: 100%; height: fit-content; display: flex; flex-wrap: wrap; justify-content: space-between;
@@ -19,17 +19,18 @@
                                                   img { width: 110%; height: auto; position: absolute; z-index: 0;}
                                                   .tan  { width: 100%; height: 100%; position: absolute; z-index: 50; background: rgba(27, 27, 25, 0.40);}
                                                   .tags { width: 90%; height: fit-content; position: absolute; bottom: 20px; z-index: 150; display: flex; align-items: flex-end; flex-wrap: wrap;
-                                                          p { width: fit-content; height: fit-content; padding: 10px 20px; margin: 5px 5px; background: aliceblue; border-radius: 1000px; color: #1B1B19;}
+                                                          p { width: fit-content; height: fit-content; padding: 10px 20px; margin: 5px 5px; background: var(--text1); border-radius: 1000px; color: var(--back);}
                                                         }
                                                 }
-                                    .legend { font-family: InterLight; font-size: 24px; color: aliceblue; }
+                                    .legend { font-family: InterLight; font-size: 24px; margin-top: 15px; color: var(--text1); }
+                                    .desc { font-family: InterLight; font-size: 1vw; margin-top: 5px; color: var(--text2); }
                                     &:hover {
-                                              .container  { filter: drop-shadow( 0 0 6px var(--custom-color));
+                                              .container  { filter: drop-shadow( 0 0 6px var(--active));
                                                 .tags {
-                                                        p { color: aliceblue; background: #1B1B19;}
+                                                        p { color: var(--text1); background: var(--back);}
                                                       }
                                               }
-                                              .legend { color: var(--custom-color);}
+                                              .legend { color: var(--active);}
                                             }
                                   }
                               .half { width: 48%;
