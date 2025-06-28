@@ -2,6 +2,7 @@
 
 .visible    { opacity: 1; transform: translateY(-100px) !important;} 
 .invisible  { opacity: 0;}
+.important  { color: var(--active) !important;}
 
 #About  { width: 80%; height: fit-content; margin: 0 auto; margin-top: 60px; padding-bottom: 100px; font-family: Inter; transition: 1.5s !important; transform: translateY(100px);
           #AboutAnchor  { width: fit-content; height: 35px; border-radius: 1000px; border: 1px solid var(--text2); @include centerRow; padding: 0 20px;

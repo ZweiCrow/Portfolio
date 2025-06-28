@@ -47,9 +47,11 @@ const About = (props) => {
         <p>A PROPOS DE MOI</p>
       </div>
       <p id="AboutText">
-        Je suis âgé de {d.getFullYear()-year} ans et j'ai pour but de travailler au sein d’une
-        équipe de création numérique. Je suis actuellement à la recherche d'un
-        poste de développeur web.
+        Je suis âgé de {d.getFullYear()-year} ans et je suis passionné par le développement front-end, particulièrement en React, et je souhaite mettre mes compétences au service d'une entreprise dynamique dans le cadre d’une alternance. Curieux, rigoureux et investi, j’ai déjà participé à plusieurs projets concrets, en équipe comme en autonomie.
+        <br />
+        <br />
+        <span className="important">Je suis à la recherche d’une alternance (apprentissage) sur 12 mois avec un rythme d’1 semaine en formation / 2 semaine en entreprise, en Île-de-France. 
+        Disponible dès Aout 2025 pour une rentrée en Octobre 2025.</span>
         <br />
         <br />
         Je baigne dans le graphisme et dans les technologies depuis mon enfance, ce sont des domaines qui ont forgé ma personnalité et qui encore aujourd’hui me passionnent.
